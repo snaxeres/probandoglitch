@@ -1,0 +1,36 @@
+<div>
+    <h1>Bienvenido al chat de la camada</h1>
+    <h2>Nombbre: <span id="myName"></span></h2>
+
+    {{!-- Input del msj --}}
+
+    <div>
+        <p>Escribe un mensaje en nuestro chat ChatBox: <input id="chatBox" type="text"></p>
+        <button id="CloseChatBox"> Cerrar la sala de chat</button>
+    </div>
+
+
+
+
+    {{!-- renderizado de los mensajes --}}
+
+    <div>
+        <p id="messageLogs"></p>
+    </div>
+
+</div>
+
+
+
+
+
+{{!-- sweet alert2 --}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+{{!-- socket --}}
+<script src="/socket.io/socket.io.js"></script>
+
+
+{{!-- Segundo script .js de la carpeta public o cliente --}}
+<script src="/js/message.js"></script>
+
