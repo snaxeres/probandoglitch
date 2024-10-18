@@ -76,7 +76,7 @@ socket.on('messageLogs', data=>{
 socket.on('userConnected', user => {
     let message = `Nuevo Usuario conectado: ${user}`
     Swal.fire({
-        icon: 'info',
+        icon: 'success',
         title: 'Nuevo usuario conectado a la sala',
         text: message,
         toast: true,
@@ -84,3 +84,5 @@ socket.on('userConnected', user => {
         possition: 'top-right'
     })
 })
+
+//continuar despues del break toca glitch
